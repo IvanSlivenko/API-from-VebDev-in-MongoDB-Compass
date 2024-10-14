@@ -1,0 +1,186 @@
+--------------------------------------------------
+mongoDB compass
+
+mongodb://localhost:27017/
+
+comands terminal mongosh
+help - список команд
+show dbs - перегляд всіх баз
+show collections - перегляд всіх колекцій що у вибраній базі данних
+show users - перегляд всіх юзерів
+db.getCollectionNames() - список всіх колекцій що у вибраній базі данних у вигляді масива
+db.getCollectionInfos() - ihfo from  colections
+
+use name - перехід до потрібної бази данних
+cls - очистка терміналу
+
+db.movies.insertOne({
+    "title": "The Grand Budapest Hotel",
+    "director": "Wes Anderson",
+    "year": 2014,
+    "genres": ["adventure", "comedy", "crime"],
+    "rating": 8.1
+  })------------------------------------------------ додаємо документ в коллекцію
+
+  db.text.insertMany([{name:"Ivan"},{name:"Volodyvyr"}, {name:"Nataliya"}])
+  --------------------------------------------------- додаємо  декілька документів в не існуючу коллекцію 
+
+db.movies.find()------------------------------------ отримати всі
+
+db["movies"].find({
+director:
+"Francis Ford Coppola"})---------------------------- отримати з відбором
+
+db["movies"].find({
+director:
+"Francis Ford Coppola"}, {title:1, director:1 })
+
+or
+
+
+db.movies.find({
+director:
+"Francis Ford Coppola"}, {title:1, director:1 })
+
+
+db["movies"].find({}, {title:1, director:1 }) -------------------------- відбираємо поля, які отримати
+
+
+db.movies.findOne({_id: ObjectId('67092aeb427e921d8b519fdc')},{title: 1, year:1})---- 
+-------------- пошук одного об'єкта за умовою та структурою
+
+db.movies.find({},{title:1}).count() ----------- узнаємо кількість об'єктів в колекції
+
+db.movies.find({},{title:1}).limit(10) --------------- задаємо кількість отриманих документів
+db.movies.find({},{title:1, rating:1}).sort({rating:1}) ----- відбір з сортуванням (за збільш)
+db.movies.find({},{title:1, rating:1}).sort({rating:-1}) ----- відбір з сортуванням (за зменш)
+
+db.movies.drop()---------delete colections
+
+db.movies.find({rating:{$gt:9}},{title:1, rating:1})------  {$gt:9} - більше діапазон відборів
+db.movies.find({rating:{$lt:5}},{title:1, rating:1})------  {$gt:9} -  менше діапазон відборів
+
+db.movies.find({rating:{$gte:9}},{title:1, rating:1})------  {$gt:9} - більше та дорівнює діапазон відборів
+db.movies.find({rating:{$lte:5}},{title:1, rating:1})------  {$gt:9} -  менше та дорівнює діапазон відборів
+
+db.movies.find({rating:{$eq:5}},{title:1, rating:1})------  {$gt:9} -  дорівнює відбору
+db.movies.find({rating:{$ne:5}},{title:1, rating:1})------  {$gt:9} -  не дорівнює відбору
+
+
+db.movies.find({$or:[{director:'Wes Anderson'},{director:'Roman Polanski'}]},{title:1, rating:1,director:1}).sort({rating:-1})
+----------- відбір методом або === or
+
+db.movies.find({ rating: { $in: [8.1, 9, 9.2] } },{title:1, rating:1}) ----- відбір з декількома умовами
+
+db.movies.find({ rating: { $nin: [8.1, 9, 9.2] } },{title:1, rating:1})---------------- відбір , що 
+не дорівнює  декільком умовами
+
+
+db.movies.find({genres: 'comedy'},{title:1, genres:1}) --------- відбір по вкладеному полю, 
+що містить умову
+
+db.movies.find({genres: ['comedy']},{title:1, genres:1}) --------- відбір по вкладеному полю, 
+що дорівнює лише умові
+
+db.movies.find({genres: ['drama','war']},{title:1, genres:1}) -------------- відбір по вкладеному полю, 
+що дорівнює ряду умов (важливий порядок значень в умові відбору)
+
+db.movies.find({genres: { $all: ["war", "drama"] } },{title:1, genres:1}) --------- відбір по вкладеному полю,
+що дорівнює ряду умов (порядок значень в умові відбору не важливий)
+
+db.movies.find({ "reviews.name":"Dora" })-------- відбір по вкладеному полю, за рівнем вкладеності === 2
+
+
+
+...........................................................................................................
+
+db.movies.deleteOne( { _id: ObjectId('670957b5eaab1b11e2b02101')}) ----------- видаляємо один документ за _id
+
+db.movies.deleteMany({ director: 'Roberto Benigni' })------- видаляємо декілька документів за умовою
+
+
+db.movies.updateOne({ _id: ObjectId('670957b5eaab1b11e2b02103')},{$set:{ rating: 9} }) --------------- оновлення одного 
+документа
+
+db.movies.updateMany({ rating:8.5 }, {$set:{ rating: 9} }) ----- оновлення декількох 
+документів 
+
+db.movies.updateOne({ _id: ObjectId('670957b5eaab1b11e2b02103') }, { $inc: {rating: 1} }) -----
+----- оновлення методом інкрементації
+
+
+db.movies.updateMany({}, { $inc:{"duration.minutes":2} }) ------ оновлення вкладеного документу
+для всієї колекції (збільшення)
+
+db.movies.updateMany({}, { $inc:{"duration.minutes": -2} }) ------ оновлення вкладеного документу
+для всієї колекції (зменшення)
+
+db.movies.updateOne({_id: ObjectId('670957b5eaab1b11e2b02103')}, { $pull: { genres: "drama" } } )
+-------------- часткове видалення данних
+
+db.movies.updateOne({_id: ObjectId('670957b5eaab1b11e2b02103')}, { $push: { genres: "drama" } } )
+-------------- часткове додавання данних
+
+db.movies.updateOne({_id: ObjectId('670957b5eaab1b11e2b02103')}, { $push: { genres: { $each["test1", "test2"] } } } )
+-------------- часткове додавання данних
+
+
+db.movies.find({ rating: null })------------------- відбір за данними, яких не існує
+
+db.movies.find({ director: 'Frank Darabont' }).skip(1)----------------- відбір з кінця
+
+db.movies.distinct("year")------------------ відбираємо перелік унікальних значень
+
+
+db.movies.replaceOun({_id: ObjectId('670957b5eaab1b11e2b02103')}, {title: "Study mongoDB"})
+
+
+db.movies.find({}, {genres: { $slice: 1 } }) 
+
+
+
+
+db.createCollection("directors") ----------- створення коллекції
+db.directors.drop() ------------------ видалення колекції
+db.movies.renameCollection("movies2")-------------------- зміна назви колекції
+db.movies.validate()--------------------------перевіряємо правильність колекції
+
+db.movies.totalSize()----------------- дізнаємося розмір ( байт )
+
+db.movies.storageSize() ------------------- дізнаємося розмір на диску ( байт )
+db.movies.stats()
+db.hostInfo()
+
+db.dropDatabase()
+
+---------------------------------------------------------------------
+project API
+
+npm init
+
+npm i express mongodb --save
+npm i nodemon --save
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+yarn dev
+
+
+
+
+
+----------------------------------------------------
+01 : 29 : 01
+=================================================
