@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "api-from-vebdev-in-mongodb-compass": "file:",
     "express": "^4.21.1",
     "mongodb": "^6.9.0"
   },

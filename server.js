@@ -20,6 +20,28 @@ connectToDb((err)=>{
     }
 });
 
+app.get('/movies',(req, res)=>{
+    const movies = []
+    db
+        .collection('movies')
+        .find()// cursor - hasNext, next, 
+        .sort({ title: 1 })
+        .forEach((movie) => {
+            movies.push(movie)
+        })
+        .then(()=>{
+            res
+                .status(200)
+                .json(movies);
+        })
+        .catch(()=>{
+            res
+                .status(500)
+                .json({error:"Someting goes wrong..."});
+        })
+
+})
+
 
 
 
