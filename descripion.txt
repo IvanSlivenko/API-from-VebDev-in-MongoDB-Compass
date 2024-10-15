@@ -170,6 +170,10 @@ URL
 http://localhost:3000/movies
 
 
+jsonViewer
+https://chromewebstore.google.com/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh
+
+
 
 
 
@@ -185,5 +189,5 @@ yarn dev
 
 
 ----------------------------------------------------
-01 : 34 : 42
+01 : 37 : 59
 =================================================

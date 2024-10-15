@@ -1,5 +1,6 @@
 const express = require('express');
 const { connectToDb, getDb } = require('./db');
+const { ObjectId } = require('mongodb');
 
 const PORT = 3000;
 
@@ -20,6 +21,7 @@ connectToDb((err)=>{
     }
 });
 
+// отримуємо всі фільми
 app.get('/movies',(req, res)=>{
     const movies = []
     db
@@ -38,9 +40,35 @@ app.get('/movies',(req, res)=>{
             res
                 .status(500)
                 .json({error:"Someting goes wrong..."});
-        })
+        });
 
-})
+});
+
+// отримуємо один фільм
+app.get('/movies/:id', (req, res)=>{
+    if(ObjectId.isValid(req.params.id)){
+        db
+        .collection('movies')
+        .findOne({ _id: new ObjectId(req.params.id) })// cursor - hasNext, next, 
+        .then((doc)=>{
+            res
+                .status(200)
+                .json(doc);
+        })
+        .catch(()=>{
+            res
+                .status(500)
+                .json({error:"Someting goes wrong..."});
+        });
+
+    }else{
+        res
+                .status(500)
+                .json({error:"Wrong id"});
+    }
+
+    
+});
 
 
 
