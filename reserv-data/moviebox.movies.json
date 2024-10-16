@@ -1,0 +1,853 @@
+[{
+  "_id": {
+    "$oid": "670957b5eaab1b11e2b020ee"
+  },
+  "title": "The Shawshank Redemption",
+  "director": "Frank Darabont",
+  "year": 1994,
+  "genres": [
+    "drama"
+  ],
+  "rating": 9.3,
+  "duration": {
+    "hours": 2,
+    "minutes": 22
+  },
+  "reviews": [
+    {
+      "name": "John Doe",
+      "text": "Amazing movie with deep emotional impact."
+    },
+    {
+      "name": "Jane Smith",
+      "text": "A masterpiece of modern cinema."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "670957b5eaab1b11e2b020ef"
+  },
+  "title": "The Godfather",
+  "director": "Francis Ford Coppola",
+  "year": 1972,
+  "genres": [
+    "crime",
+    "drama"
+  ],
+  "rating": 9.2,
+  "duration": {
+    "hours": 2,
+    "minutes": 55
+  },
+  "reviews": [
+    {
+      "name": "Michael Corleone",
+      "text": "Best gangster movie ever made."
+    },
+    {
+      "name": "Tom Hagen",
+      "text": "A must-watch for every movie lover."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "670957b5eaab1b11e2b020f0"
+  },
+  "title": "The Dark Knight",
+  "director": "Christopher Nolan",
+  "year": 2008,
+  "genres": [
+    "action",
+    "crime",
+    "drama"
+  ],
+  "rating": 9,
+  "duration": {
+    "hours": 2,
+    "minutes": 32
+  },
+  "reviews": [
+    {
+      "name": "Bruce Wayne",
+      "text": "Nolan's vision of Batman is incredible."
+    },
+    {
+      "name": "Harvey Dent",
+      "text": "The Joker's performance is unforgettable."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "670957b5eaab1b11e2b020f1"
+  },
+  "title": "Schindler's List",
+  "director": "Steven Spielberg",
+  "year": 1993,
+  "genres": [
+    "biography",
+    "drama",
+    "history"
+  ],
+  "rating": 8.9,
+  "duration": {
+    "hours": 3,
+    "minutes": 15
+  },
+  "reviews": [
+    {
+      "name": "Oskar Schindler",
+      "text": "Heart-wrenching and powerful story."
+    },
+    {
+      "name": "Itzhak Stern",
+      "text": "A film that leaves a lasting impact."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "670957b5eaab1b11e2b020f2"
+  },
+  "title": "Pulp Fiction",
+  "director": "Quentin Tarantino",
+  "year": 1994,
+  "genres": [
+    "crime",
+    "drama"
+  ],
+  "rating": 8.9,
+  "duration": {
+    "hours": 2,
+    "minutes": 34
+  },
+  "reviews": [
+    {
+      "name": "Vincent Vega",
+      "text": "Unique and stylish with great dialogues."
+    },
+    {
+      "name": "Mia Wallace",
+      "text": "A rollercoaster of cool, dark humor."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "670957b5eaab1b11e2b020f3"
+  },
+  "title": "Forrest Gump",
+  "director": "Robert Zemeckis",
+  "year": 1994,
+  "genres": [
+    "drama",
+    "romance"
+  ],
+  "rating": 8.8,
+  "duration": {
+    "hours": 2,
+    "minutes": 22
+  },
+  "reviews": [
+    {
+      "name": "Forrest Gump",
+      "text": "Life is like a box of chocolates."
+    },
+    {
+      "name": "Jenny Curran",
+      "text": "Heartwarming and inspirational."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "670957b5eaab1b11e2b020f4"
+  },
+  "title": "Inception",
+  "director": "Christopher Nolan",
+  "year": 2010,
+  "genres": [
+    "action",
+    "adventure",
+    "sci-fi"
+  ],
+  "rating": 8.8,
+  "duration": {
+    "hours": 2,
+    "minutes": 28
+  },
+  "reviews": [
+    {
+      "name": "Dom Cobb",
+      "text": "Mind-bending and visually stunning."
+    },
+    {
+      "name": "Arthur",
+      "text": "A thrilling ride through dreams."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "670957b5eaab1b11e2b020f5"
+  },
+  "title": "The Lord of the Rings: The Return of the King",
+  "director": "Peter Jackson",
+  "year": 2003,
+  "genres": [
+    "adventure",
+    "drama",
+    "fantasy"
+  ],
+  "rating": 8.9,
+  "duration": {
+    "hours": 3,
+    "minutes": 21
+  },
+  "reviews": [
+    {
+      "name": "Frodo Baggins",
+      "text": "An epic conclusion to an epic saga."
+    },
+    {
+      "name": "Samwise Gamgee",
+      "text": "Courage and friendship at its finest."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "670957b5eaab1b11e2b020f6"
+  },
+  "title": "Fight Club",
+  "director": "David Fincher",
+  "year": 1999,
+  "genres": [
+    "drama"
+  ],
+  "rating": 8.8,
+  "duration": {
+    "hours": 2,
+    "minutes": 19
+  },
+  "reviews": [
+    {
+      "name": "Tyler Durden",
+      "text": "A bold and thought-provoking film."
+    },
+    {
+      "name": "The Narrator",
+      "text": "A deep dive into the human psyche."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "670957b5eaab1b11e2b020f7"
+  },
+  "title": "The Good, the Bad and the Ugly",
+  "director": "Sergio Leone",
+  "year": 1966,
+  "genres": [
+    "western"
+  ],
+  "rating": 8.8,
+  "duration": {
+    "hours": 2,
+    "minutes": 58
+  },
+  "reviews": [
+    {
+      "name": "Blondie",
+      "text": "The best western of all time."
+    },
+    {
+      "name": "Tuco",
+      "text": "A timeless classic."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "670957b5eaab1b11e2b020f8"
+  },
+  "title": "The Matrix",
+  "director": "Lana Wachowski, Lilly Wachowski",
+  "year": 1999,
+  "genres": [
+    "action",
+    "sci-fi"
+  ],
+  "rating": 8.7,
+  "duration": {
+    "hours": 2,
+    "minutes": 16
+  },
+  "reviews": [
+    {
+      "name": "Neo",
+      "text": "A revolutionary film in sci-fi."
+    },
+    {
+      "name": "Morpheus",
+      "text": "What is real? What is the Matrix?"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "670957b5eaab1b11e2b020f9"
+  },
+  "title": "Goodfellas",
+  "director": "Martin Scorsese",
+  "year": 1990,
+  "genres": [
+    "biography",
+    "crime",
+    "drama"
+  ],
+  "rating": 8.7,
+  "duration": {
+    "hours": 2,
+    "minutes": 26
+  },
+  "reviews": [
+    {
+      "name": "Henry Hill",
+      "text": "The best mob movie ever made."
+    },
+    {
+      "name": "Jimmy Conway",
+      "text": "It's all about respect and power."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "670957b5eaab1b11e2b020fa"
+  },
+  "title": "Star Wars: Episode V - The Empire Strikes Back",
+  "director": "Irvin Kershner",
+  "year": 1980,
+  "genres": [
+    "action",
+    "adventure",
+    "fantasy"
+  ],
+  "rating": 8.7,
+  "duration": {
+    "hours": 2,
+    "minutes": 4
+  },
+  "reviews": [
+    {
+      "name": "Luke Skywalker",
+      "text": "The greatest Star Wars movie."
+    },
+    {
+      "name": "Darth Vader",
+      "text": "I am your father."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "670957b5eaab1b11e2b020fb"
+  },
+  "title": "One Flew Over the Cuckoo's Nest",
+  "director": "Milos Forman",
+  "year": 1975,
+  "genres": [
+    "drama"
+  ],
+  "rating": 8.7,
+  "duration": {
+    "hours": 2,
+    "minutes": 13
+  },
+  "reviews": [
+    {
+      "name": "Randle McMurphy",
+      "text": "A moving and emotional journey."
+    },
+    {
+      "name": "Nurse Ratched",
+      "text": "A powerful story about control."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "670957b5eaab1b11e2b020fc"
+  },
+  "title": "Parasite",
+  "director": "Bong Joon Ho",
+  "year": 2019,
+  "genres": [
+    "comedy",
+    "drama",
+    "thriller"
+  ],
+  "rating": 8.6,
+  "duration": {
+    "hours": 2,
+    "minutes": 12
+  },
+  "reviews": [
+    {
+      "name": "Kim Ki-taek",
+      "text": "An ingenious social commentary."
+    },
+    {
+      "name": "Park Dong-ik",
+      "text": "A masterpiece in storytelling."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "670957b5eaab1b11e2b020fd"
+  },
+  "title": "Interstellar",
+  "director": "Christopher Nolan",
+  "year": 2014,
+  "genres": [
+    "adventure",
+    "drama",
+    "sci-fi"
+  ],
+  "rating": 8.6,
+  "duration": {
+    "hours": 2,
+    "minutes": 49
+  },
+  "reviews": [
+    {
+      "name": "Cooper",
+      "text": "A breathtaking space journey."
+    },
+    {
+      "name": "Brand",
+      "text": "Explores love and time beautifully."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "670957b5eaab1b11e2b020fe"
+  },
+  "title": "Spirited Away",
+  "director": "Hayao Miyazaki",
+  "year": 2001,
+  "genres": [
+    "animation",
+    "adventure",
+    "family"
+  ],
+  "rating": 8.6,
+  "duration": {
+    "hours": 2,
+    "minutes": 5
+  },
+  "reviews": [
+    {
+      "name": "Chihiro",
+      "text": "A magical adventure for all ages."
+    },
+    {
+      "name": "Haku",
+      "text": "Visually stunning and emotional."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "670957b5eaab1b11e2b020ff"
+  },
+  "title": "Saving Private Ryan",
+  "director": "Steven Spielberg",
+  "year": 1998,
+  "genres": [
+    "drama",
+    "war"
+  ],
+  "rating": 8.6,
+  "duration": {
+    "hours": 2,
+    "minutes": 49
+  },
+  "reviews": [
+    {
+      "name": "Captain Miller",
+      "text": "A realistic depiction of war."
+    },
+    {
+      "name": "Private Ryan",
+      "text": "A gripping and heroic story."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "670957b5eaab1b11e2b02100"
+  },
+  "title": "The Green Mile",
+  "director": "Frank Darabont",
+  "year": 1999,
+  "genres": [
+    "crime",
+    "drama",
+    "fantasy"
+  ],
+  "rating": 8.6,
+  "duration": {
+    "hours": 3,
+    "minutes": 9
+  },
+  "reviews": [
+    {
+      "name": "Paul Edgecomb",
+      "text": "A moving and emotional tale."
+    },
+    {
+      "name": "John Coffey",
+      "text": "Miracles do happen."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "670957b5eaab1b11e2b02101"
+  },
+  "title": "Life Is Beautiful",
+  "director": "Roberto Benigni",
+  "year": 1997,
+  "genres": [
+    "comedy",
+    "drama",
+    "romance"
+  ],
+  "rating": 8.6,
+  "duration": {
+    "hours": 1,
+    "minutes": 56
+  },
+  "reviews": [
+    {
+      "name": "Guido Orefice",
+      "text": "A touching story of hope and love."
+    },
+    {
+      "name": "Dora",
+      "text": "A beautiful portrayal of family."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "670957b5eaab1b11e2b02102"
+  },
+  "title": "The Lion King",
+  "director": "Roger Allers, Rob Minkoff",
+  "year": 1994,
+  "genres": [
+    "animation",
+    "adventure",
+    "drama"
+  ],
+  "rating": 8.5,
+  "duration": {
+    "hours": 1,
+    "minutes": 28
+  },
+  "reviews": [
+    {
+      "name": "Simba",
+      "text": "An iconic animated classic."
+    },
+    {
+      "name": "Mufasa",
+      "text": "A timeless tale of courage."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "670957b5eaab1b11e2b02103"
+  },
+  "title": "Gladiator",
+  "director": "Ridley Scott",
+  "year": 2000,
+  "genres": [
+    "action",
+    "adventure",
+    "drama"
+  ],
+  "rating": 8.5,
+  "duration": {
+    "hours": 2,
+    "minutes": 35
+  },
+  "reviews": [
+    {
+      "name": "Maximus",
+      "text": "Are you not entertained?"
+    },
+    {
+      "name": "Commodus",
+      "text": "A tale of power and betrayal."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "670957b5eaab1b11e2b02104"
+  },
+  "title": "Back to the Future",
+  "director": "Robert Zemeckis",
+  "year": 1985,
+  "genres": [
+    "adventure",
+    "comedy",
+    "sci-fi"
+  ],
+  "rating": 8.5,
+  "duration": {
+    "hours": 1,
+    "minutes": 56
+  },
+  "reviews": [
+    {
+      "name": "Marty McFly",
+      "text": "Time travel at its best."
+    },
+    {
+      "name": "Doc Brown",
+      "text": "Great Scott!"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "670957b5eaab1b11e2b02105"
+  },
+  "title": "The Prestige",
+  "director": "Christopher Nolan",
+  "year": 2006,
+  "genres": [
+    "drama",
+    "mystery",
+    "sci-fi"
+  ],
+  "rating": 8.5,
+  "duration": {
+    "hours": 2,
+    "minutes": 10
+  },
+  "reviews": [
+    {
+      "name": "Robert Angier",
+      "text": "An engaging tale of rivalry."
+    },
+    {
+      "name": "Alfred Borden",
+      "text": "What a twist!"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "670957b5eaab1b11e2b02106"
+  },
+  "title": "Whiplash",
+  "director": "Damien Chazelle",
+  "year": 2014,
+  "genres": [
+    "drama",
+    "music"
+  ],
+  "rating": 8.5,
+  "duration": {
+    "hours": 1,
+    "minutes": 47
+  },
+  "reviews": [
+    {
+      "name": "Andrew Neiman",
+      "text": "Intense and inspiring."
+    },
+    {
+      "name": "Terence Fletcher",
+      "text": "Perfection demands sacrifice."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "670957b5eaab1b11e2b02107"
+  },
+  "title": "The Departed",
+  "director": "Martin Scorsese",
+  "year": 2006,
+  "genres": [
+    "crime",
+    "drama",
+    "thriller"
+  ],
+  "rating": 8.5,
+  "duration": {
+    "hours": 2,
+    "minutes": 31
+  },
+  "reviews": [
+    {
+      "name": "Billy Costigan",
+      "text": "Scorsese at his finest."
+    },
+    {
+      "name": "Colin Sullivan",
+      "text": "A thrilling crime drama."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "670957b5eaab1b11e2b02108"
+  },
+  "title": "The Intouchables",
+  "director": "Olivier Nakache, Éric Toledano",
+  "year": 2011,
+  "genres": [
+    "biography",
+    "comedy",
+    "drama"
+  ],
+  "rating": 8.5,
+  "duration": {
+    "hours": 1,
+    "minutes": 52
+  },
+  "reviews": [
+    {
+      "name": "Driss",
+      "text": "Uplifting and heartwarming."
+    },
+    {
+      "name": "Philippe",
+      "text": "A story of friendship and courage."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "670957b5eaab1b11e2b02109"
+  },
+  "title": "The Pianist",
+  "director": "Roman Polanski",
+  "year": 2002,
+  "genres": [
+    "biography",
+    "drama",
+    "music"
+  ],
+  "rating": 8.5,
+  "duration": {
+    "hours": 2,
+    "minutes": 30
+  },
+  "reviews": [
+    {
+      "name": "Władysław Szpilman",
+      "text": "A powerful and moving story."
+    },
+    {
+      "name": "Dorota",
+      "text": "Beautifully told with emotion."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "670957b5eaab1b11e2b0210a"
+  },
+  "title": "The Usual Suspects",
+  "director": "Bryan Singer",
+  "year": 1995,
+  "genres": [
+    "crime",
+    "drama",
+    "mystery"
+  ],
+  "rating": 8.5,
+  "duration": {
+    "hours": 1,
+    "minutes": 46
+  },
+  "reviews": [
+    {
+      "name": "Verbal Kint",
+      "text": "The best plot twist ever."
+    },
+    {
+      "name": "Keaton",
+      "text": "A gripping crime mystery."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "670957b5eaab1b11e2b0210b"
+  },
+  "title": "American History X",
+  "director": "Tony Kaye",
+  "year": 1998,
+  "genres": [
+    "crime",
+    "drama"
+  ],
+  "rating": 8.5,
+  "duration": {
+    "hours": 1,
+    "minutes": 59
+  },
+  "reviews": [
+    {
+      "name": "Derek Vinyard",
+      "text": "Powerful and thought-provoking."
+    },
+    {
+      "name": "Danny Vinyard",
+      "text": "A must-see for everyone."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "670957b5eaab1b11e2b0210c"
+  },
+  "title": "The Grand Budapest Hotel",
+  "director": "Wes Anderson",
+  "year": 2014,
+  "genres": [
+    "adventure",
+    "comedy",
+    "crime"
+  ],
+  "rating": 8.1,
+  "duration": {
+    "hours": 1,
+    "minutes": 39
+  },
+  "reviews": [
+    {
+      "name": "Gustave H.",
+      "text": "Visually stunning and quirky."
+    },
+    {
+      "name": "Zero Moustafa",
+      "text": "Wes Anderson at his best."
+    }
+  ]
+}]

@@ -174,20 +174,57 @@ jsonViewer
 https://chromewebstore.google.com/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh
 
 
+insertOne
 
 
+body
+raw
+json
+
+body :
+
+{
+  "title": "American History X",
+  "director": "Tony Kaye",
+  "year": 2000,
+  "genres": [
+    "crime",
+    "drama"
+  ],
+  "rating": 8.5
+}
+
+mongoose
+
+npm i mongoose --save
 
 
+mongoDB atlas
 
+1.
+Database Acces:
+dataName:moviebox
+user: adekvatofarvater
+password: rAaeK7nd4DvcK0Eu
+
+
+2.
+Network Acces:
+add IP Adres
+всі пристрої
+
+3. Database:
+BrowseCollections
+
+add May Own Data
 
 
 
 yarn dev
 
-
-
-
-
 ----------------------------------------------------
-01 : 37 : 59
+02 : 13 : 23 --------------------------------------------- перехід на хмарне  сховище
+
+відео опрацьоване до кінця
+
 =================================================
